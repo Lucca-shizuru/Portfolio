@@ -1,12 +1,47 @@
-# React + Vite
+# 🚀 Portfólio Dev - [Seu Nome Aqui]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Badge](https://img.shields.io/badge/React-%5E18-blue?style=flat&logo=react)
+![Badge](https://img.shields.io/badge/TailwindCSS-%5E3-38B2AC?style=flat&logo=tailwindcss)
+![Badge](https://img.shields.io/badge/Vite-%5E5-646CFF?style=flat&logo=vite)
+![Badge](https://img.shields.io/badge/Deploy-Vercel-000000?style=flat&logo=vercel)
 
-Currently, two official plugins are available:
+> Meu portfólio pessoal criado com React e estilizado com TailwindCSS. Um espaço onde apresento meus projetos, habilidades e formas de contato. Simples, direto e com minha cara! ✨
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Preview do Portfólio](https://via.placeholder.com/1200x600?text=Preview+do+Portf%C3%B3lio)  
+<!-- Dica: Substitua o link acima por uma screenshot real do seu portfólio -->
+
+---
+
+## 🧠 Funcionalidades
+
+- Página **Home** com introdução e destaque
+- Seção **Sobre mim** com uma breve descrição profissional
+- Galeria de **Projetos** com links para GitHub e deploys
+- Página de **Contato** com email e redes sociais
+- Navegação com React Router SPA
+- Totalmente **responsivo** (mobile, tablet, desktop)
+
+---
+
+## 🛠️ Tecnologias Usadas
+
+| Front-end | Utilitário | Hospedagem |
+|-----------|------------|-------------|
+| React     | TailwindCSS | Vercel      |
+| Vite      | React Router DOM | GitHub |
+
+---
+
+## 📁 Estrutura de Pastas
+
+src/
+├── assets/ → Imagens e ícones
+├── components/ → Navbar, Footer, etc.
+├── pages/ → Home, Sobre, Projetos, Contato
+├── App.jsx → Componente principal com rotas
+└── main.jsx → Entrada da aplicação
+
