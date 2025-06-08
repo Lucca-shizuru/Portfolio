@@ -1,9 +1,4 @@
-# 🚀 Portfólio Dev - [Seu Nome Aqui]
-
-![Badge](https://img.shields.io/badge/React-%5E18-blue?style=flat&logo=react)
-![Badge](https://img.shields.io/badge/TailwindCSS-%5E3-38B2AC?style=flat&logo=tailwindcss)
-![Badge](https://img.shields.io/badge/Vite-%5E5-646CFF?style=flat&logo=vite)
-![Badge](https://img.shields.io/badge/Deploy-Vercel-000000?style=flat&logo=vercel)
+# 🚀 Portfólio Dev -
 
 > Meu portfólio pessoal criado com React e estilizado com TailwindCSS. Um espaço onde apresento meus projetos, habilidades e formas de contato. Simples, direto e com minha cara! ✨
 
@@ -12,7 +7,7 @@
 ## 📸 Preview
 
 ![Preview do Portfólio](https://via.placeholder.com/1200x600?text=Preview+do+Portf%C3%B3lio)  
-<!-- Dica: Substitua o link acima por uma screenshot real do seu portfólio -->
+
 
 ---
 
