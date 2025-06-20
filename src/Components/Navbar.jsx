@@ -19,7 +19,7 @@ function Navbar() {
             </div>
 
             <div style={styles.socialLinks}>
-                <a href="www.linkedin.com/in/lucca-shizuru-da-costa-68943726b" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/lucca-shizuru-da-costa-68943726b" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin size={24} color="white" />
                 </a>
                 <a href="https://github.com/Lucca-shizuru" target="_blank" rel="noopener noreferrer">
@@ -110,7 +110,7 @@ const styles = {
         color: isActive ? 'black' : 'white',
         fontSize: '0.875rem',
         padding: '10px 0',
-        borderRadius: '8px',
+        borderRadius: '6px',
         backgroundColor: isActive ? '#facc15' : 'transparent',
         fontWeight: isActive ? 'bold' : 'normal',
         textDecoration: 'none',

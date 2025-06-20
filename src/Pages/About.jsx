@@ -1,13 +1,24 @@
-
+import ProfileCard from "../Components/ProfileCard.jsx";
 
 
 function About () {
     return (
-        <div className="p-4">
-            <h1> Aqui sera sobre mim </h1>
+        <div style={styles.container}>
+            <ProfileCard />
 
         </div>
     );
+}
+
+const styles = {
+    container: {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            width: '100vw',
+            height: '100vh',
+
+    }
 }
 
 export default About;
