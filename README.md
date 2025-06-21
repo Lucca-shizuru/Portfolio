@@ -6,7 +6,8 @@
 
 ## 📸 Preview
 
-![Preview do Portfólio](https://via.placeholder.com/1200x600?text=Preview+do+Portf%C3%B3lio)  
+![image](https://github.com/user-attachments/assets/049c6cc0-8cd3-4323-9cb4-6c14e6e0c2b0)
+ 
 
 
 ---
