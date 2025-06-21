@@ -26,7 +26,7 @@
 
 | Front-end | Utilitário | Hospedagem |
 |-----------|------------|-------------|
-| React     | TailwindCSS | Vercel      |
+| React     |Css Inline | Vercel      |
 | Vite      | React Router DOM | GitHub |
 
 ---
