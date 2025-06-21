@@ -25,7 +25,7 @@ function Navbar() {
                 <div style={styles.separator} />
                 <NavLinkItem to="/projetos" label="Projetos" />
                 <div style={styles.separator} />
-                <NavLinkItem to="/contato" label="Contato" />
+                <NavLinkItem to="habilidades" label="Habilidades" />
             </div>
 
             <div style={styles.socialLinks}>
@@ -118,7 +118,7 @@ const styles = {
     link: (isActive) => ({
         width: '100%',
         color: isActive ? 'black' : 'white',
-        fontSize: '0.75rem',
+        fontSize: '0.68rem',
         padding: '10px 0',
         borderRadius: '6px',
         backgroundColor: isActive ? '#facc15' : 'transparent',
