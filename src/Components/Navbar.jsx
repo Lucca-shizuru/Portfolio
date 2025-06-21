@@ -1,11 +1,21 @@
 import { Link, useLocation } from 'react-router-dom';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
 
 
 function Navbar() {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return (
-        <nav style={styles.container}>
+        <nav style={styles.container(isMobile)}>
             <img src="/lsdev-logo.jpg" alt="Logo" style={styles.logo} />
             <div style={styles.separator} />
             <div style={styles.navList}>
@@ -63,12 +73,12 @@ const NavLinkItem = ({ to, label, icon }) => {
 
 
 const styles = {
-    container: {
+    container: (isMobile) => ({
         position: 'fixed',
         top: 0,
         left: 0,
         height: '100vh',
-        width: '64px',
+        width: isMobile ? '52px' : '64px',
         backgroundColor: '#0a0a0a',
         display: 'flex',
         flexDirection: 'column',
@@ -76,11 +86,11 @@ const styles = {
         paddingTop: '24px',
         boxShadow: '0 0 10px rgba(0,0,0,0.5)',
         zIndex: 1000,
-        borderRight: '1px solid #141414'
-    },
+        borderRight: '1px solid #141414',
+    }),
     logo: {
-        height: '64px',
-        width: '64px',
+        height: '48px',
+        width: '48px',
         objectFit: 'contain',
         marginBottom: '35px',
     },
@@ -89,7 +99,7 @@ const styles = {
         height: '1px',
         backgroundColor: '#2e2e2e',
         margin: '1px 0',
-        alignSelf: 'center'
+        alignSelf: 'center',
     },
     navList: {
         display: 'flex',
@@ -98,8 +108,8 @@ const styles = {
         width: '100%',
         padding: '0 8px',
     },
-    socialLinks:{
-        marginTop: '300px',
+    socialLinks: {
+        marginTop: '500px',
         display: 'flex',
         gap: '10px',
         padding: '16px 0',
@@ -108,7 +118,7 @@ const styles = {
     link: (isActive) => ({
         width: '100%',
         color: isActive ? 'black' : 'white',
-        fontSize: '0.875rem',
+        fontSize: '0.75rem',
         padding: '10px 0',
         borderRadius: '6px',
         backgroundColor: isActive ? '#facc15' : 'transparent',
@@ -119,8 +129,9 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         cursor: 'pointer',
-    })
+    }),
 };
+
 
 
 export default Navbar;

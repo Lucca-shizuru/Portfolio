@@ -11,7 +11,7 @@ function App() {
                 display: 'flex',
                 minHeight: '100vh',
                 backgroundColor: '#0a0a0a',
-                color: 'white'
+                color: 'white',
             }}>
                 <Navbar />
                 <main style={{
