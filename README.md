@@ -16,7 +16,8 @@
 - Página **Home** com introdução e destaque
 - Seção **Sobre mim** com uma breve descrição profissional
 - Galeria de **Projetos** com links para GitHub e deploys
-- Página de **Contato** com email e redes sociais
+- Seção **Habilidades** todas minhas habilidades 
+- botao de **Contato** com email
 - Navegação com React Router SPA
 - Totalmente **responsivo** (mobile, tablet, desktop)
 
@@ -35,7 +36,7 @@
 
 src/
 ├── assets/ → Imagens e ícones
-├── components/ → Navbar, Footer, etc.
+├── components/ → Navbar, profile card etc.
 ├── pages/ → Home, Sobre, Projetos, Contato
 ├── App.jsx → Componente principal com rotas
 └── main.jsx → Entrada da aplicação
