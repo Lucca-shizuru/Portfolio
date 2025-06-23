@@ -23,7 +23,7 @@ const ProfileCard = () => {
             maxWidth: isMobile ? '90%' :'700px',
             boxShadow: '0 4px 20px rgba(0,0,0,0.4)',
             margin: isMobile ? '20px auto' : '0',
-            transform: isMobile ? 'translate(0, 0)' : 'translate(-60px, -40px)',
+            transform: isMobile ? 'translate(0, 0)' : 'translate(-300px, -40px)',
         },
         image: {
             width: isMobile ? '100px' : '240px',
