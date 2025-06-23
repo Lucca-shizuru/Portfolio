@@ -16,6 +16,7 @@ function Home() {
 
     const styles = {
         container: {
+            marginTop: '100px',
             height: '80vh',
             display: 'flex',
             alignItems: 'flex-start',
