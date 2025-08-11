@@ -15,13 +15,13 @@ function Projects() {
     const styles = {
         container: {
             marginLeft: isMobile ? 80 : 80,
-            padding: '50px 1px',
+            padding: '100px 1px',
             minHeight: '50vh',
             backgroundColor: '#0a0a0a',
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'flex-start',
-            gap: '20px',
+            gap: '50px',
         },
         pastaWrapper: {
             width: isMobile ? '90%' : '200px',
