@@ -13,10 +13,10 @@ function About () {
 const styles = {
     container: {
             display: 'flex',
-            justifyContent: 'center',
+            justifyContent: 'flex-start',
             alignItems: 'center',
-            width: '100vw',
-            height: '100vh',
+            marginTop: '100px',
+            marginLeft:'350px'
 
     }
 }

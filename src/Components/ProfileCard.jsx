@@ -58,7 +58,7 @@ const ProfileCard = () => {
             <div style={styles.textContent}>
                 <h2 style={styles.name}>Lucca Shizuru</h2>
                 <p style={styles.description}>
-                    Desenvolvedor Backend com cerca de 1 ano de experiência, em projetos
+                    Desenvolvedor Backend com cerca de 2 anos de experiência, em projetos
                     pessoais e acadêmicos, com uma base sólida em desenvolvimento de APIs
                     usando Spring Boot e .NET. Tenho expertise em bancos relacionais,
                     trabalhando com PostgreSQL, além de conhecimento em design de APIs,
