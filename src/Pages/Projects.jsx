@@ -23,32 +23,43 @@ function Projects() {
             justifyContent: 'flex-start',
             gap: '40px',
         },
-        pastaWrapper: {
+        projectWrapper: {
             width: isMobile ? '90%' : '220px',
             cursor: 'pointer',
             textAlign: 'center',
             transition: 'all 0.3s ease',
         },
-        pasta: {
-            width: '100%',
-            height: '140px',
-            background: 'linear-gradient(145deg, #facc15, #facc15)',
-            border: '1px solid #dee2e6',
-            borderRadius: '8px',
+        notebook: {
             position: 'relative',
-            boxShadow: '0 4px 15px rgba(0,0,0,0.15)',
-            overflow: 'hidden',
+            width: '100%',
+            height: '180px',
+            backgroundColor: '#1a1a1a',
+            borderRadius: '12px',
+            border: '2px solid #333',
+            boxShadow: '0 4px 15px rgba(0,0,0,0.3)',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column',
         },
-        aba: {
-            width: '50%',
-            height: '26px',
-            background: '#e9ecef',
-            borderBottom: '1px solid #dee2e6',
-            borderRadius: '6px 6px 0 0',
-            position: 'absolute',
-            top: '-20px',
-            left: '0',
+
+        notebookScreen: {
+            width: '100%',
+            height: 'calc(100% - 12px)',
+            objectFit: 'cover',
+            borderRadius: '10px 10px 0 0',
+            zIndex: 1,
+            position: 'relative',
         },
+
+        notebookBase: {
+            width: '70%',
+            height: '12px',
+            backgroundColor: '#555',
+            borderRadius: '0 0 8px 8px',
+            zIndex: 2,
+        },
+
         texto: {
             marginTop: '16px',
             fontFamily: 'Inter, sans-serif',
@@ -71,13 +82,18 @@ function Projects() {
             {projetcsData.map((project, index) => (
                 <div
                     key={index}
-                    style={styles.pastaWrapper}
+                    style={styles.projectWrapper}
                     onClick={() => window.open(project.pdf, '_blank')}
                     onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.05)')}
                     onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
                 >
-                    <div style={styles.pasta}>
-                        <div style={styles.aba}></div>
+                    <div style={styles.notebook}>
+                        <img
+                            src={project.image}
+                            alt={project.name}
+                            style={styles.notebookScreen}
+                        />
+                        <div style={styles.notebookBase}></div>
                     </div>
                     <div style={styles.texto}>
                         <div style={styles.nome}>{project.name}</div>
