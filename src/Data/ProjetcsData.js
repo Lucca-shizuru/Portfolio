@@ -10,7 +10,7 @@ export default [
     {
         name: "McDonaldsApi",
         description: "Sistema interno do McDonald's",
-        pdf: "src/Data/ProjectsPdf/Reactiva.pdf",
+        pdf: "src/Data/ProjectsPdf/McDonaldsApi.pdf",
     },
 
 
