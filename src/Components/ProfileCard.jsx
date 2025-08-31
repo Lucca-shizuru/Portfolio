@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const ProfileCard = () => {
-    const [isMobile, setIsMobile] = React.useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         const mediaQuery = window.matchMedia('(max-width: 768px)');
@@ -20,20 +20,24 @@ const ProfileCard = () => {
             flexDirection: 'column',
             alignItems: 'center',
             gap: '16px',
-            maxWidth: isMobile ? '90%' :'700px',
+            maxWidth: '700px',
+            width: '100%',
+            minWidth: '300px',
             boxShadow: '0 4px 20px rgba(0,0,0,0.4)',
-            margin: isMobile ? '20px auto' : '0',
-            transform: isMobile ? 'translate(0, 0)' : 'translate(-300px, -40px)',
+            margin: '20px auto',
+            boxSizing: 'border-box',
         },
         image: {
-            width: isMobile ? '100px' : '240px',
-            height: isMobile ? '100px' : '240px',
+            width: isMobile ? '80%' : '240px',
+            height: 'auto',
             borderRadius: '9999px',
             objectFit: 'cover',
             border: '2px solid #facc15',
+            maxWidth: '240px',
         },
         textContent: {
             textAlign: 'center',
+            width: '100%',
         },
         name: {
             fontSize: isMobile ? '1.5rem' : '2rem',
@@ -42,7 +46,7 @@ const ProfileCard = () => {
             marginBottom: '8px',
         },
         description: {
-            fontSize: isMobile ? '0.9rem' : '1rem',
+            fontSize: isMobile ? '0.95rem' : '1rem',
             lineHeight: '1.6',
         },
     };

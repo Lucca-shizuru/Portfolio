@@ -78,7 +78,7 @@ const styles = {
         top: 0,
         left: 0,
         height: '100vh',
-        width: isMobile ? '52px' : '64px',
+        width: isMobile ? '52px' : '84px',
         backgroundColor: '#0a0a0a',
         display: 'flex',
         flexDirection: 'column',
@@ -89,8 +89,8 @@ const styles = {
         borderRight: '1px solid #141414',
     }),
     logo: {
-        height: '48px',
-        width: '48px',
+        height: '60px',
+        width: '60px',
         objectFit: 'contain',
         marginBottom: '35px',
     },
@@ -109,7 +109,7 @@ const styles = {
         padding: '0 8px',
     },
     socialLinks: {
-        marginTop: '500px',
+        marginTop: '320px',
         display: 'flex',
         gap: '10px',
         padding: '16px 0',

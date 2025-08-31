@@ -1,4 +1,6 @@
 import { FaCode, FaCogs, FaDatabase, FaGitAlt, FaCloud } from "react-icons/fa";
+import {useEffect, useState} from "react";
+import PageContainer from "../Components/PageContainer.jsx";
 
 const skills = [
     {
@@ -35,8 +37,17 @@ const skills = [
 ];
 
 export default function Skills() {
+    const [isMobile, setIsMobile] = useState(false); // ✅ Declarado corretamente
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth <= 768);
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
-        <section style={{ padding: "50px", background: "#0a0a0a", color: "#fff" }}>
+        <PageContainer>
             <h2 style={{
                 fontSize: "2rem",
                 marginBottom: "30px",
@@ -47,7 +58,7 @@ export default function Skills() {
 
             <div style={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+                gridTemplateColumns: isMobile ? "1fr" : "repeat(auto-fit, minmax(250px, 1fr))",
                 gap: "20px"
             }}>
                 {skills.map((cat, index) => (
@@ -59,8 +70,6 @@ export default function Skills() {
                         transition: "0.3s",
                         border: `2px solid ${cat.color}`
                     }}
-                         onMouseEnter={e => e.currentTarget.style.transform = "scale(1.05)"}
-                         onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
                     >
                         <div style={{
                             fontSize: "2rem",
@@ -90,6 +99,6 @@ export default function Skills() {
                     </div>
                 ))}
             </div>
-        </section>
+    </PageContainer>
     );
 }

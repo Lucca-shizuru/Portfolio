@@ -1,24 +1,15 @@
 import ProfileCard from "../Components/ProfileCard.jsx";
+import PageContainer from "../Components/PageContainer.jsx";
 
 
 function About () {
     return (
-        <div style={styles.container}>
+        <PageContainer>
             <ProfileCard />
 
-        </div>
+        </PageContainer>
     );
 }
 
-const styles = {
-    container: {
-            display: 'flex',
-            justifyContent: 'flex-start',
-            alignItems: 'center',
-            marginTop: '100px',
-            marginLeft:'350px'
-
-    }
-}
 
 export default About;
